@@ -10,7 +10,6 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 
@@ -55,4 +54,4 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
--- vim: ts=2 sts=2 sw=2 et
+-- vim: ts=2 sts=2 sw=2
