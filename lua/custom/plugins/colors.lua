@@ -2,6 +2,9 @@ return {
 	'marko-cerovac/material.nvim',
 	priotity = 1000,
 	opts = function()
+		vim.g.material_style = "deep ocean"
+		vim.cmd('colorscheme material')
+
 		require('material').setup({
 
 			contrast = {
@@ -60,7 +63,7 @@ return {
 			disable = {
 				colored_cursor = false, -- Disable the colored cursor
 				borders = false, -- Disable borders between vertically split windows
-				background = false, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
+				background = true, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
 				term_colors = false, -- Prevent the theme from setting terminal colors
 				eob_lines = false -- Hide the end-of-buffer lines
 			},
@@ -78,7 +81,5 @@ return {
 
 			custom_highlights = {}, -- Overwrite highlights with your own
 		})
-		vim.cmd('colorscheme material')
-		vim.g.material_style = "deep ocean"
 	end
 }

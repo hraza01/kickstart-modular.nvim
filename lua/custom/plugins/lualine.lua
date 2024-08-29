@@ -2,7 +2,7 @@ return {
 	'nvim-lualine/lualine.nvim',
 	dependencies = { 'nvim-tree/nvim-web-devicons' },
 	options = {
-		theme = 'material',
+		theme = 'auto',
 		refresh = {
 			statusline = 1000,
 			tabline = 1000,
