@@ -1,20 +1,30 @@
 return {
-	'nvim-lualine/lualine.nvim',
-	dependencies = { 'nvim-tree/nvim-web-devicons' },
-	options = {
-		theme = 'auto',
-		refresh = {
-			statusline = 1000,
-			tabline = 1000,
-			winbar = 1000,
-		}
-	},
-	sections = {
-		lualine_a = { 'mode' },
-		lualine_b = { 'branch', 'diff', 'diagnostics' },
-		lualine_c = { 'filename' },
-		lualine_x = { 'encoding', 'fileformat', 'filetype' },
-		lualine_y = { 'progress' },
-		lualine_z = { 'location' }
-	},
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicon' },
+    config = function()
+        require('lualine').setup {
+            options = {
+                theme = 'material-stealth',
+                component_separators = { left = '', right = '' },
+                section_separators = { left = '', right = '' },
+            },
+            sections = {
+                lualine_a = { 'mode' },
+                lualine_b = {
+                    'branch',
+                    {
+                        'diff',
+                        color_added = '#b8bb26',
+                        color_modified = '#fabd2f',
+                        color_removed = '#fb4934',
+                        symbols = { added = '+', modified = '~', removed = '-' },
+                    },
+                },
+                lualine_c = { 'filename' },
+                lualine_x = { 'encoding', 'fileformat', 'filetype' },
+                lualine_y = { 'progress' },
+                lualine_z = { 'location' },
+            },
+        }
+    end,
 }
