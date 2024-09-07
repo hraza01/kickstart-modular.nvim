@@ -2,6 +2,12 @@
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
+vim.opt.guicursor = ''
+vim.opt.termguicolors = true
+
+-- vim.g.netrw_browse_split = 0
+-- vim.g.netrw_banner = 1
+-- vim.g.netrw_winsize = 50
 
 -- Make line numbers default
 vim.opt.number = true
@@ -15,7 +21,9 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
-
+vim.opt.smartindent = true
+vim.opt.swapfile = false
+vim.opt.backup = false
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
@@ -66,4 +74,5 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.opt.colorcolumn = '120'
 -- vim: ts=4 sts=4 sw=4 et
