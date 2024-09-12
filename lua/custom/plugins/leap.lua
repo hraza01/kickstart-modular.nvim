@@ -1,4 +1,4 @@
 return {
 	'ggandor/leap.nvim',
-	dependencies = 'tpope/vim-repeat'
+	dependencies = 'tpope/vim-repeat',
 }
