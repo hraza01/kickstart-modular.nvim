@@ -33,7 +33,7 @@ return {
 
 			plugins = { -- Uncomment the plugins that you use to highlight them
 				-- Available plugins:
-				-- "coc",
+				'coc',
 				-- "colorful-winsep",
 				-- "dap",
 				-- "dashboard",
